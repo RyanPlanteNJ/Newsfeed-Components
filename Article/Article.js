@@ -87,11 +87,11 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   },
   {
-    title: 'BIG BOOTY',
+    title: 'Bacon Ipsum',
     date: 'Jan 2 2019',
-    firstParagraph: 'hey hey hey',
-    secondParagraph: 'say waht?',
-    thirdParagraph: 'Hmmm'
+    firstParagraph: 'Bacon ipsum dolor amet brisket meatball fatback, flank cow chuck pork belly tongue porchetta pig frankfurter shankle biltong. Porchetta short ribs pancetta, tail alcatra tri-tip filet mignon t-bone tongue fatback frankfurter chislic capicola pork belly beef. Kielbasa jerky pork chop bacon shoulder corned beef strip steak hamburger capicola andouille. Brisket bresaola beef filet mignon. Picanha tail pork chop venison boudin tongue pancetta meatball hamburger ground round spare ribs.',
+    secondParagraph: 'Jowl kielbasa alcatra venison, cupim meatloaf shoulder corned beef pig kevin ham hock chislic turkey sirloin. Cupim chislic pork belly short ribs meatball salami buffalo capicola venison leberkas landjaeger turducken corned beef bresaola. Venison leberkas ham andouille, pork belly hamburger bresaola cupim meatloaf ribeye ground round shankle. Meatloaf sirloin picanha, cupim andouille biltong corned beef bresaola turducken turkey ham beef flank. Ribeye tongue turkey bresaola rump doner salami pancetta tail chislic beef. Meatball rump chislic ground round bacon alcatra boudin chicken.',
+    thirdParagraph: 'Brisket chicken pastrami t-bone. Short loin corned beef tongue beef ribs, biltong jowl shoulder alcatra tri-tip hamburger meatloaf sausage burgdoggen porchetta tenderloin. Alcatra picanha shank, t-bone doner kielbasa ball tip turducken pork. Burgdoggen jowl bresaola boudin short loin venison cow porchetta corned beef landjaeger biltong pastrami bacon flank. Filet mignon strip steak pancetta pork loin.'
   }
 ];
 
@@ -137,6 +137,7 @@ function articlecreator(data){
   paragraph1.textContent = data.firstParagraph
   paragraph2.textContent = data.secondParagraph
   paragraph3.textContent = data.thirdParagraph
+  span.innerHTML = 'Expand';
   //
   div.classList.add('article');
   date.classList.add('date');
@@ -150,7 +151,7 @@ function articlecreator(data){
   div.appendChild(span);
 
   span.addEventListener('click', (event) => {
-    container.classList.toggle("article-open");
+    div.classList.toggle('article-open');
   })
 
 
