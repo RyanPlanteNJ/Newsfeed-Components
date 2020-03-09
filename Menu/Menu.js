@@ -36,7 +36,7 @@ let menuItems = [
 
 let header = document.querySelector('.header');
 
-function menu(menuitems){
+function createMenu(items){
   let menu = document.createElement('div');
   let list = document.createElement('ul');
   let listItem;
@@ -56,15 +56,6 @@ function menu(menuitems){
   menubutton.addEventListener('click', (event) => {
     menu.classList.toggle('menu--open');
   });
-  //
-
-
-  //
-  return menu;
 }
 
-
- let menus = menuItems.map((item) => {
-    let menuslist = menu(item);
-    return menuslist;
-  });
+createMenu(menuItems);
