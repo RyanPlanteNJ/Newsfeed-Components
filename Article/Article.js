@@ -152,7 +152,7 @@ function articlecreator(data){
 
   span.addEventListener('click', (event) => {
     div.classList.toggle('article-open');
-  })
+})
 
 
 
